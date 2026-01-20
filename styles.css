@@ -1,0 +1,36 @@
+:root{
+  --glass: rgba(22, 28, 40, .55);
+  --glass-2: rgba(22, 28, 40, .40);
+  --border: rgba(255,255,255,.16);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.72);
+  --shadow: 0 14px 40px rgba(0,0,0,.45);
+  --glow: 0 0 22px rgba(140, 190, 255, .35);
+  --radius: 18px;
+}
+
+*{ box-sizing: border-box; }
+html,body{ height:100%; margin:0; font-family: 'Inter', sans-serif; color:var(--text); }
+.bg{position:fixed; inset:0; overflow:hidden; z-index:-1;}
+.bg__img{width:100%; height:100%; object-fit:cover;}
+.bg__overlay{position:absolute; inset:0; background:rgba(0,0,0,0.5);} 
+.page{padding:2rem;}
+.container{max-width:900px; margin:0 auto;}
+.hero__title{font-size:2.5rem; font-weight:700; margin-bottom:0.5rem;}
+.hero__subtitle{font-size:1.2rem; margin-bottom:1.5rem;}
+.store-row{display:flex; gap:1rem; margin-bottom:1.5rem;}
+.store-btn{display:flex; align-items:center; padding:0.5rem 1rem; background:var(--glass); border-radius:var(--radius); text-decoration:none; color:var(--text); backdrop-filter:blur(10px);} 
+.waitlist{background:var(--glass); padding:1rem; border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:2rem;}
+.waitlist__form{display:flex; gap:0.5rem;}
+.waitlist__input{flex:1; padding:0.5rem; border-radius:var(--radius); border:1px solid var(--border); background:var(--glass-2); color:var(--text);}
+.waitlist__button{padding:0.5rem 1rem; border-radius:var(--radius); border:none; background:#4A90E2; color:white; cursor:pointer;}
+.cards{display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:2rem;}
+.card{flex:1; min-width:200px; background:var(--glass); padding:1rem; border-radius:var(--radius); box-shadow:var(--shadow);} 
+.card__title{margin-top:0; margin-bottom:0.5rem; font-size:1.5rem;}
+.checklist{list-style:none; padding:0; margin:0;}
+.checklist li{margin-bottom:0.5rem;}
+.how__track{display:flex; flex-wrap:wrap; gap:1rem; padding:1rem; background:var(--glass); border-radius:var(--radius);}
+.how__step{display:flex; align-items:center; gap:0.5rem;}
+.bottom__box{padding:2rem; background:var(--glass); border-radius:var(--radius); text-align:center;}
+.footer{display:flex; flex-direction:column; align-items:center; gap:0.5rem; padding:2rem 0; font-size:0.9rem;}
+.footer__links{display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;}
