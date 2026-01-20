@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Night Manager</title>
+  <meta name="description" content="Conecta creadores de contenido con venues y agencias. Únete a la lista de espera." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="bg">
+    <img class="bg__img" src="assets/city.jpg" alt="" />
+    <div class="bg__overlay"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <main class="page">
+    <!-- HERO -->
+    <section class="hero container">
+      <h1 class="hero__title">
+        Conecta Creadores de<br/>
+        Contenido con Venues y Agencias
+      </h1>
+
+      <p class="hero__subtitle">
+        Colabora en experiencias y beneficios exclusivos.
+      </p>
+
+      <div class="store-row">
+        <a class="store-btn" href="#" aria-label="App Store">
+          <span class="store-btn__icon"></span>
+          <span class="store-btn__text">
+            <span class="store-btn__small">Consíguelo en</span>
+            <span class="store-btn__big">App Store</span>
+          </span>
+        </a>
+
+        <a class="store-btn" href="#" aria-label="Google Play">
+          <span class="store-btn__triangle" aria-hidden="true"></span>
+          <span class="store-btn__text">
+            <span class="store-btn__small">Disponible en</span>
+            <span class="store-btn__big">Google Play</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="waitlist">
+        <div class="waitlist__label">Únete a la lista de espera</div>
+
+        <form class="waitlist__form" id="waitlistForm">
+          <input class="waitlist__input" type="email" name="email" placeholder="Ingresa tu correo..." required />
+          <button class="waitlist__button" type="submit">Unirme</button>
+        </form>
+
+        <div class="waitlist__note">Acceso anticipado. Sin spam.</div>
+        <div class="waitlist__status" id="waitlistStatus" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="container cards">
+      <div class="glass card">
+        <h2 class="card__title">Para Creadores de Contenido</h2>
+        <ul class="checklist">
+          <li><span class="check">✓</span> Aplica a beneficios exclusivos</li>
+          <li><span class="check">✓</span> Convierte tus seguidores en experiencias.</li>
+        </ul>
+      </div>
+
+      <div class="glass card">
+        <h2 class="card__title">Para Venues y Agencias PR</h2>
+        <ul class="checklist">
+          <li>Publica ofertas y elige a los creadores ideales</li>
+          <li>Impulsa tu negocio sin complicaciones</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="container how">
+      <h2 class="section-title">Cómo Funciona</h2>
+
+      <div class="how__track glass">
+        <div class="how__step">
+          <div class="how__icon">🗒️</div>
+          <div class="how__text"><strong>1.</strong> Publica una oferta</div>
+        </div>
+
+        <div class="how__step">
+          <div class="how__icon">👥</div>
+          <div class="how__text"><strong>2.</strong> Los creadores aplican</div>
+        </div>
+
+        <div class="how__step">
+          <div class="how__icon">✅</div>
+          <div class="how__text"><strong>3.</strong> Apruebas perfiles</div>
+        </div>
+
+        <div class="how__step">
+          <div class="how__icon">🤝</div>
+          <div class="how__text"><strong>4.</strong> Se realiza la colaboración</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECOND WAITLIST -->
+    <section class="container bottom">
+      <div class="glass bottom__box">
+        <h2 class="bottom__title">Únete a la Lista de Espera</h2>
+        <p class="bottom__subtitle">Sé de los primeros en acceder a Night Manager.</p>
+
+        <form class="waitlist__form waitlist__form--wide" id="waitlistForm2">
+          <input class="waitlist__input" type="email" name="email" placeholder="Ingresa tu correo electrónico" required />
+          <button class="waitlist__button" type="submit">Unirme a la lista →</button>
+        </form>
+
+        <div class="waitlist__note">Acceso anticipado. Sin spam.</div>
+        <div class="waitlist__status" id="waitlistStatus2" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+      <div class="footer__brand">
+        <span class="footer__logo" aria-hidden="true">◑</span>
+        <span>Night Manager</span>
+      </div>
+
+      <div class="footer__links">
+        <a href="#">Contacto</a>
+        <span class="sep">|</span>
+        <a href="#">Instagram</a>
+        <span class="sep">|</span>
+        <a href="#">Política de Privacidad</a>
+        <span class="sep">|</span>
+        <a href="#">Términos</a>
+      </div>
+
+      <div class="footer__copy">© <span id="year"></span> Night Manager</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
